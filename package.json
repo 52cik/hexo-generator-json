@@ -1,0 +1,19 @@
+{
+  "name": "hexo-generator-json",
+  "version": "0.1.0",
+  "description": "hexo 文章生成 json 数据供 js 调用。(目前仅 title link date tags)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/52cik/hexo-generator-json.git"
+  },
+  "author": "52cik <fe.52cik@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/52cik/hexo-generator-json/issues"
+  },
+  "homepage": "https://github.com/52cik/hexo-generator-json#readme"
+}
