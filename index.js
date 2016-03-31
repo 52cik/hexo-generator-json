@@ -1,4 +1,5 @@
 hexo.extend.generator.register(function(site) { // 注册插件
+    var cfg = hexo.config.plugin_json || {}; // 配置
     var posts = [];
     var tags = {};
 
@@ -9,7 +10,7 @@ hexo.extend.generator.register(function(site) { // 注册插件
 
         posts.push({
             title: page.title,
-            keywords: page.keywords,
+            keywords: page.keywords, // 自定义字段
             // page.description || page.excerpt,
             date: date,
             link: page.permalink
@@ -21,7 +22,7 @@ hexo.extend.generator.register(function(site) { // 注册插件
     });
 
     return {
-        path: 'search.json',
+        path: cfg.path || 'search.json',
         data: JSON.stringify({posts: posts, tags: tags})
     };
 });
