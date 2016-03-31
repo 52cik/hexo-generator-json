@@ -1,6 +1,6 @@
 {
   "name": "hexo-generator-json",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "hexo 文章生成 json 数据供 js 调用",
   "main": "index.js",
   "scripts": {
