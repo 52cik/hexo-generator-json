@@ -29,6 +29,7 @@ plugin_json:
 
 ``` yml
 plugin_json:
+  is_jsonp: true # jsonp 模式
   callback: callback # 回调函数名
 ```
 
@@ -36,10 +37,11 @@ plugin_json:
 
 ``` yml
 plugin_json:
-  path: search.json
-  keywords: true # 是否提取关键词字段
-  date: true # 是否提取日期
-  callback: false # jsonp 回调函数名 false 是 json 模式
+  path: search.json # 生成的文件名
+  is_full_url: false # 是否显示完整的 url 或 path
+  date: false # 提取日期字段
+  is_jsonp: false # jsonp 模式
+  callback: callback # 回调函数名
 ```
 
 好啦，尽情享受吧。
